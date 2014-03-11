@@ -1,4 +1,5 @@
 TideDataRails::Application.routes.draw do
+  get "regions" => 'regions#index'
   get "states" => 'states#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
