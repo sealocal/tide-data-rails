@@ -1,6 +1,9 @@
 TideDataRails::Application.routes.draw do
-  get "regions" => 'regions#index'
-  get "states" => 'states#index'
+  get 'regions' => 'regions#index'
+  get 'regions/:name' => 'regions#show'
+
+  get 'states' => 'states#index'
+  get 'states/:name' => 'states#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
