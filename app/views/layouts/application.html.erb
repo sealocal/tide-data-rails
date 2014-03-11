@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>TideDataRails</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The easiest guide to Low and High Tide time predictions for beaches and rivers in the United States.  TideData.com">
+    <meta name="author" content="Mike Taylor">
 
-<%= yield %>
+    <meta name="keywords" content="tide, tides, table, tables, tide table, tide charts, tide chart, low Tide, high Tide, tide height, tide prediction, tide predictions, gulf coast, Florida Keys, Texas, Louisiana, Mississippi,Alabama, Florida, Georgia, North Carolina, South Carolina, Virginia, Maryland, Maine, Massachusetts, Rhode Island, New Hampshire, Connecticut, New York, New Jersey, California, Washington, Oregon, Atlantic, Pacific, East Coast, West Coast, ocean, surf, surfing, fish, fishing, boat, boating, sailing">
 
-</body>
+    <link rel="icon" href="#" type="image/png" href="http://www.tidedata.com/tidedataicon.png" />
+
+    <title>
+      TideData
+      <%# content_for?(:title) ? yield(:title) : "TideData.com &copy; - High" +
+               "and Low Tide times for beaches and rivers in the U.S." %>
+    </title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+  </body>
 </html>
