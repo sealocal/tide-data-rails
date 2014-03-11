@@ -1,0 +1,66 @@
+#topheading {
+  position:relative;
+  letter-spacing:10px;
+  word-spacing:14px;
+  top:-20px;
+}
+
+#bottomheading {
+  position:relative;
+  float:right;
+  letter-spacing:10px;
+  word-spacing:14px;
+  bottom:-20px;
+}
+
+p.capitalize {
+  text-transform:capitalize;
+  line-height:40%;
+  font-size:1.05em;
+}
+
+#container {
+  position:relative;
+  top:-45px;
+}
+
+table, td, th {
+  //border:1px solid black;
+  border-collapse:collapse;
+  text-align:center;
+}
+
+table {
+  float:left;
+}
+
+th {
+  font-family:"Broadway";
+  font-size:1.50em;
+  letter-spacing:2px;
+}
+
+td {
+  padding-top:8px;
+  font-size:1.30em;
+  font-weight:bold;
+}
+
+td.east {
+  padding-left:16px;
+  padding-right:16px;
+}
+
+a {
+  text-decoration:none;
+}
+
+#westcoast {
+  margin-left:18%;
+  margin-right:7%;
+}
+
+#eastcoast {
+  margin-left:5%;
+  margin-right:18%;
+}
