@@ -3,5 +3,6 @@ class LocationsController < ApplicationController
   end
 
   def show
+    @location_name = params[:name]
   end
 end

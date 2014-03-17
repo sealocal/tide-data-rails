@@ -1,6 +1,6 @@
 TideDataRails::Application.routes.draw do
-  get 'locations/index'
-  get 'locations/show'
+  get 'locations' => 'locations#index'
+  get 'locations/:name' => 'locations#show'
 
   get 'regions' => 'regions#index'
   get 'regions/:name' => 'regions#show'
