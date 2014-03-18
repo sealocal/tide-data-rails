@@ -1,0 +1,36 @@
+<h1>
+  Select a region:
+</h1>
+<br />
+<br />
+<br />
+<div id="container">
+  <br />
+  <table id="tableleft">
+    <tr>
+      <th class="left" rowspan = "5">
+        <%= @state_name %>
+      </th>
+    </tr>
+  </table>
+  <table id="tablecenter">
+    <tr>
+      <th class="center">&nbsp;</th>
+    </tr>
+    <tr>
+      <td class="center">&nbsp;</td>
+    </tr>
+    <%# print out each region %>
+    <%# store the state's directory in a variable %>
+    <%# for each region folder in the state's directory %>
+    <% 10.times do |n| %>
+      <tr>
+        <td class="center">
+          <% region_name = 'Some Region' %>
+          <%= link_to region_name, '#' %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+<br />
