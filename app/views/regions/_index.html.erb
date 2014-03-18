@@ -1,0 +1,62 @@
+<h1>
+  Select a region:
+</h1>
+<br />
+<br />
+<br />
+<div id="container">
+  <br />
+  <table id="tableleft">
+    <tr>
+      <th class="left" rowspan = "5">
+        <%= @state_name %>
+      </th>
+    </tr>
+  </table>
+  <table id="tablecenter">
+    <tr>
+      <th class="center">&nbsp;</th>
+    </tr>
+    <tr>
+      <td class="center">&nbsp;</td>
+    </tr>
+    <%# print out each region %>
+    <%# use @state.regions or just @regions %>
+    <%# for each region folder in the state's directory %>
+    <%# @regions.each do |region| %>
+    <% 1.times do |n| %>
+      <tr>
+        <td class="center">
+          <% region = 'East Coast Beaches' %>
+          <%= link_to region, '#' %>
+        </td>
+      </tr>
+      <tr>
+        <td class ="center">
+          Florida Keys
+        </td>
+      </tr>
+      <tr>
+        <td class ="center">
+          Gulf Coast Beaches
+        </td>
+      </tr>
+      <tr>
+        <td class ="center">
+          Nassau Sound and Fort George River
+        </td>
+      </tr>
+      <tr>
+        <td class ="center">
+          St. John's River
+        </td>
+      </tr>
+      <tr>
+        <td class ="center">
+          Tampa Bay
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+<br />
