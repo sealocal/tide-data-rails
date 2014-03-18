@@ -3,6 +3,6 @@ class StatesController < ApplicationController
   end
 
   def show
-    @state_name = params[:name]
+    @state_name = params[:state_name]
   end
 end
