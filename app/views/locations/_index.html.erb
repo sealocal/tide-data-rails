@@ -1,0 +1,22 @@
+<h1>
+  Select a location:
+</h1>
+
+<br />
+<h1>
+  <span id="SelectedRegion">
+    <%= @region_name %>
+  </span>
+</h1>
+<br />
+
+<div id="container">
+  <div id="locationColumns">
+    <% @locations_array.each do |location| %>
+      <%= link_to locations_path(@state_name, location) do %>
+        <p class="capitalize"><%= "#{location}" %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<br />
