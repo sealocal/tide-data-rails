@@ -28,32 +28,37 @@
       <tr>
         <td class="center">
           <% region = 'East Coast Beaches' %>
-          <%= link_to region, '#' %>
+          <%= link_to region, "#{@state_name}/regions/#{region}" %>
         </td>
       </tr>
       <tr>
         <td class ="center">
-          Florida Keys
+          <% region = "Florida Keys" %>
+          <%= link_to region, "#{@state_name}/regions/Florida Keys" %>
         </td>
       </tr>
       <tr>
         <td class ="center">
-          Gulf Coast Beaches
+          <% region = "Gulf Coast Beaches" %>
+          <%= link_to region, "#{@state_name}/regions/Gulf Coast Beaches" %>
         </td>
       </tr>
       <tr>
         <td class ="center">
-          Nassau Sound and Fort George River
+          <% region = "Nassau Sound and Fort George River" %>
+          <%= link_to region, "#{@state_name}/regions/Nassau Sound and Fort George River" %>
         </td>
       </tr>
       <tr>
         <td class ="center">
-          St. John's River
+          <% region = "St. John's River" %>
+          <%= link_to region, "#{@state_name}/regions/St. John's River" %>
         </td>
       </tr>
       <tr>
         <td class ="center">
-          Tampa Bay
+          <% region = "Tampa Bay" %>
+          <%= link_to region, "#{@state_name}/regions/Tampa Bay" %>
         </td>
       </tr>
     <% end %>
