@@ -1,3 +1,42 @@
 // Place all the styles related to the Locations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  position: relative;
+  letter-spacing: 10px;
+  word-spacing: 14px;
+  top: -20px;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+  line-height: 40%;
+  font-size: 1.05em;
+}
+
+#container {
+  position: relative;
+  top: -45px;
+  left: 7px;
+}
+
+#locationColumns {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td, th {
+  border-collapse: collapse;
+  text-align: center;
+  //border: 1px solid black;
+}
+
+.column {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  /*width: 25%*/
+  /*width: 33%*/
+  /*width: 50%*/
+}
