@@ -40,3 +40,61 @@ table, td, th {
   /*width: 33%*/
   /*width: 50%*/
 }
+
+select {
+  font-size:1.5em
+}
+
+.center {
+  margin-left:auto;
+  margin-right:auto;
+  //background-color:#b0e0e6;
+}
+
+#note {
+  margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  font-size:70%;
+  //font-weight:bolder;
+  //color:red;
+}
+
+#SelectedLocation {
+  text-transform:capitalize;
+  line-height:40%;
+    font-size:1.20em;
+}
+
+h1,h2,form {
+  text-align:center;
+}
+
+table {
+  border-collapse:collapse;
+  //border-style:solid;
+  text-align:center;
+}
+
+th {
+  font-size:160%;
+  font-family:"Arial";
+}
+
+td {
+  //border-style:solid;
+  text-align:right;
+  font-family:"Arial";
+  font-weight:bold;
+  font-size:120%;
+}
+
+td.left {
+  text-align:right;
+}
+
+td.right {
+  text-align:left;
+  padding-left:20px;
+  width:67%;
+}
