@@ -76,7 +76,10 @@
 <br />
 <table id="tides" class="center">
   <tr>
-    <th colspan = "2">Tides for <span id="tabledate"></span><br /></th>
+    <th colspan = "2">Tides for
+      <span id="tabledate"></span>
+      <br />
+    </th>
   </tr>
   <tr>
     <td colspan = "2">&nbsp;</td>
@@ -102,9 +105,9 @@
 <br />
 <br />
 <p id="note">
+  <%= "NOTE: " + @footnote + "All data is obtained from NOAA." %>
 </p>
 <br />
 <script type="text/javascript">
-  footnote();
   setToday();
 </script>
