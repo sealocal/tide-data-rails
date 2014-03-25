@@ -206,10 +206,3 @@ function setToday() {
 }
 
 
-//This function inserats a note about the source of the data into the HTML document.
-function footnote() {
-  var tideNote = locationData.getElementsByTagName("FOOTNOTE")[0].childNodes[0].nodeValue;
-  tideNote = "NOTE: " + tideNote + "All data is obtained from NOAA.";
-  document.getElementById("note").innerHTML = tideNote;
-}
-
