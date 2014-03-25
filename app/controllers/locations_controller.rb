@@ -3,6 +3,12 @@ class LocationsController < ApplicationController
   end
 
   def show
-    @location_name = params[:name]
+    @state_name = params[:state_name]
+    @location_name = params[:location_name]
+    xml_dir = Rails.root.join 'app/xml/',  @state_name, 'locations'
+    xml_file_path = xml_dir + "#{@location_name}.xml"
+    xml_content = File.read(xml_file_path)
+    #TODO: this is ridiculous, but it works for now
+    @footnote = Hash.from_xml(xml_content)["TIDETABLE"]["MONTH"][0]["FOOTNOTE"]
   end
 end
