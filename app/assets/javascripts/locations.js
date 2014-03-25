@@ -62,8 +62,7 @@ function writeLocationsToHTML() {
   // }
 }
 
-//The gettide.js file is loaded by the SelectDayMaster.php file.
-//The behavior of this file is to load XML data for the user-specified
+//The behavior of this JS is to load XML data for the user-specified
 //location, set the current date for the user, and retrieve the High and Low
 //tides for the day with their respective times.  When the user changes the
 //date, the checkDate() function will run and retrieve new data.
@@ -204,13 +203,5 @@ function setToday() {
   document.getElementById("2010").selected = true;
 
   getTide();
-}
-
-
-//This function inserats a note about the source of the data into the HTML document.
-function footnote() {
-  var tideNote = locationData.getElementsByTagName("FOOTNOTE")[0].childNodes[0].nodeValue;
-  tideNote = "NOTE: " + tideNote + "All data is obtained from NOAA.";
-  document.getElementById("note").innerHTML = tideNote;
 }
 
