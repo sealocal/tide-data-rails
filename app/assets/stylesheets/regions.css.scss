@@ -1,11 +1,12 @@
 // Place all the styles related to the Regions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1 {
-  position:relative;
-  letter-spacing:10px;
-  word-spacing:14px;
-  top:-20px;
+
+h1.index {
+  position: relative;
+  letter-spacing: 10px;
+  word-spacing: 14px;
+  top: -20px;
 }
 
 p.capitalize {
