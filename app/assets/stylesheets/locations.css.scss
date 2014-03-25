@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
+h1.index {
   position: relative;
   letter-spacing: 10px;
   word-spacing: 14px;
@@ -41,52 +41,41 @@ table, td, th {
   /*width: 50%*/
 }
 
-select {
-  font-size:1.5em
+//Locations#show
+
+h1.show, form {
+  text-align: center;
 }
 
-.center {
-  margin-left:auto;
-  margin-right:auto;
-  //background-color:#b0e0e6;
-}
-
-#note {
-  margin-left:auto;
-  margin-right:auto;
-  width:30%;
-  font-size:70%;
-  //font-weight:bolder;
-  //color:red;
-}
-
+//location name
 #SelectedLocation {
   text-transform:capitalize;
   line-height:40%;
-    font-size:1.20em;
+  font-size: 1.20em;
 }
 
-h1,h2,form {
-  text-align:center;
+//date selection
+select {
+  font-size: 1.5em
 }
 
-table {
-  border-collapse:collapse;
-  //border-style:solid;
-  text-align:center;
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  //background-color: red;
 }
 
-th {
-  font-size:160%;
-  font-family:"Arial";
+table#tides th {
+  font-size: 160%;
+  font-family: "Arial";
 }
 
-td {
-  //border-style:solid;
-  text-align:right;
-  font-family:"Arial";
-  font-weight:bold;
-  font-size:120%;
+table#tides td {
+  //border-style: solid;
+  text-align: right;
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 120%;
 }
 
 td.left {
@@ -98,3 +87,14 @@ td.right {
   padding-left:20px;
   width:67%;
 }
+
+#note {
+  margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  font-size:70%;
+  //font-weight:bolder;
+  //color:red;
+}
+
+
