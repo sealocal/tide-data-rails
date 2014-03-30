@@ -138,7 +138,7 @@ function getTide(annualData) {
 
   //Finds tide data for the given date, formatted as a string.
   //Example: "01/04/2010 Mon 12:07AM LST -1.6 L 07:23AM LST 9.8 H 01:23PM LST 4.8 L 06:05PM LST 7.1 H"
-  var tideChoice = annualData.getElementsByTagName("MONTH")[month].childNodes[day].childNodes[0].nodeValue;
+  var tideChoice = annualData.TIDETABLE.MONTH[month].DATE[day].trim();
 
   //Set the indexes of the times in tideChoice.
   //The first tide time will begin at the 16th character.
