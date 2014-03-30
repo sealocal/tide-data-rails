@@ -77,29 +77,6 @@ function checkDate() {
   return [month, day, year];
 }
 
-//This function converts the user's selected location into an XML path
-//and redirects the browser to the home page if no location is selected.
-//It is called when the SelectDay.php page loads.
-function getAnnualData() {
-  //TODO: used arbitrary state for testing!
-  var stateName = "Florida";
-
-  //Determine user's selected location from HTML content, and create path variable
-  var locationName = document.getElementById("SelectedLocation").innerHTML;
-  locationName = locationName.toLowerCase();
-  //TODO: not sure how to navigate Rails app file structure using JS
-  var xmlFilename = "app/xml/" + stateName + "/locations/" + locationName + ".xml";
-
-  //Redirect users to the home page when there is no location selected
-  if (xmlFilename === "app/xml/" + stateName + "/locations/.xml") {
-    window.open("http://www.TideData.com/","_self");
-  }
-
-  //Store the XML document
-  return annualData = loadXMLDoc(xmlFilename);
-}
-
-
 function getTide() {
   //find the JSON object in the #annual_data div
   annualData = $('#annual_data').data('tides')
