@@ -9,6 +9,7 @@ class LocationsController < ApplicationController
     xml_file_path = xml_dir + "#{@location_name}.xml"
     xml_content = File.read(xml_file_path)
     #TODO: this is ridiculous, but it works for now
+    @annual_data = Hash.from_xml(xml_content)
     @footnote = Hash.from_xml(xml_content)["TIDETABLE"]["MONTH"][0]["FOOTNOTE"]
   end
 end
