@@ -80,23 +80,27 @@ function checkDate() {
 //This function converts the user's selected location into an XML path
 //and redirects the browser to the home page if no location is selected.
 //It is called when the SelectDay.php page loads.
-function getLocationData() {
+function getAnnualData() {
+  //TODO: used arbitrary state for testing!
+  var stateName = "Florida";
+
   //Determine user's selected location from HTML content, and create path variable
   var locationName = document.getElementById("SelectedLocation").innerHTML;
   locationName = locationName.toLowerCase();
-  var xmlFilename = "data/" + locationName + ".xml";
+  //TODO: not sure how to navigate Rails app file structure using JS
+  var xmlFilename = "app/xml/" + stateName + "/locations/" + locationName + ".xml";
 
   //Redirect users to the home page when there is no location selected
-  if (xmlFilename === "data/.xml") {
+  if (xmlFilename === "app/xml/" + stateName + "/locations/.xml") {
     window.open("http://www.TideData.com/","_self");
   }
 
   //Store the XML document
-  return locationData = loadXMLDoc(xmlFilename);
+  return annualData = loadXMLDoc(xmlFilename);
 }
 
 
-function getTide() {
+function getTide(annualData) {
   //check for date and store it in variables
   var date = checkDate();
   var month = parseInt(date[0], 10);
@@ -135,15 +139,15 @@ function getTide() {
   //There are 14 elements inside the root of each of the tidal data XML documents.
   //Internext Explorer will return 14.
   //Firefox will return 29.
-  if (locationData.documentElement.childNodes.length === 29) {
+  if (annualData.documentElement.childNodes.length === 29) {
     day = day * 2 + 3;
-  } else if (locationData.documentElement.childNodes.length === 14) {
+  } else if (annualData.documentElement.childNodes.length === 14) {
     day = day + 1;
   }
 
   //Finds tide data for the given date, formatted as a string.
   //Example: "01/04/2010 Mon 12:07AM LST -1.6 L 07:23AM LST 9.8 H 01:23PM LST 4.8 L 06:05PM LST 7.1 H"
-  var tideChoice = locationData.getElementsByTagName("MONTH")[month].childNodes[day].childNodes[0].nodeValue;
+  var tideChoice = annualData.getElementsByTagName("MONTH")[month].childNodes[day].childNodes[0].nodeValue;
 
   //Set the indexes of the times in tideChoice.
   //The first tide time will begin at the 16th character.
@@ -201,7 +205,5 @@ function setToday() {
   //document.getElementById(todaysYear).selected = true;
   //However, the XML tidal data is outdated, so the year will be set to 2010 using this line.
   document.getElementById("2010").selected = true;
-
-  getTide();
 }
 
