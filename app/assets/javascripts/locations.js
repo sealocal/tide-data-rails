@@ -100,7 +100,10 @@ function getAnnualData() {
 }
 
 
-function getTide(annualData) {
+function getTide() {
+  //find the JSON object in the #annual_data div
+  annualData = $('#annual_data').data('tides')
+
   //check for date and store it in variables
   var date = checkDate();
   var month = parseInt(date[0], 10);
