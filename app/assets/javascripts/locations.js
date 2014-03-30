@@ -62,8 +62,7 @@ function writeLocationsToHTML() {
   // }
 }
 
-//The gettide.js file is loaded by the SelectDayMaster.php file.
-//The behavior of this file is to load XML data for the user-specified
+//The behavior of this JS is to load XML data for the user-specified
 //location, set the current date for the user, and retrieve the High and Low
 //tides for the day with their respective times.  When the user changes the
 //date, the checkDate() function will run and retrieve new data.
@@ -78,26 +77,10 @@ function checkDate() {
   return [month, day, year];
 }
 
-//This function converts the user's selected location into an XML path
-//and redirects the browser to the home page if no location is selected.
-//It is called when the SelectDay.php page loads.
-function getLocationData() {
-  //Determine user's selected location from HTML content, and create path variable
-  var locationName = document.getElementById("SelectedLocation").innerHTML;
-  locationName = locationName.toLowerCase();
-  var xmlFilename = "data/" + locationName + ".xml";
-
-  //Redirect users to the home page when there is no location selected
-  if (xmlFilename === "data/.xml") {
-    window.open("http://www.TideData.com/","_self");
-  }
-
-  //Store the XML document
-  return locationData = loadXMLDoc(xmlFilename);
-}
-
-
 function getTide() {
+  //find the JSON object in the #annual_data div
+  annualData = $('#annual_data').data('tides')
+
   //check for date and store it in variables
   var date = checkDate();
   var month = parseInt(date[0], 10);
@@ -132,19 +115,10 @@ function getTide() {
     document.getElementById("31").disabled = false;
   }
 
-  //Change day value so it corresponds to correct element tag in XML DOM structure.
-  //There are 14 elements inside the root of each of the tidal data XML documents.
-  //Internext Explorer will return 14.
-  //Firefox will return 29.
-  if (locationData.documentElement.childNodes.length === 29) {
-    day = day * 2 + 3;
-  } else if (locationData.documentElement.childNodes.length === 14) {
-    day = day + 1;
-  }
 
   //Finds tide data for the given date, formatted as a string.
   //Example: "01/04/2010 Mon 12:07AM LST -1.6 L 07:23AM LST 9.8 H 01:23PM LST 4.8 L 06:05PM LST 7.1 H"
-  var tideChoice = locationData.getElementsByTagName("MONTH")[month].childNodes[day].childNodes[0].nodeValue;
+  var tideChoice = annualData.TIDETABLE.MONTH[month].DATE[day].trim();
 
   //Set the indexes of the times in tideChoice.
   //The first tide time will begin at the 16th character.
@@ -202,15 +176,5 @@ function setToday() {
   //document.getElementById(todaysYear).selected = true;
   //However, the XML tidal data is outdated, so the year will be set to 2010 using this line.
   document.getElementById("2010").selected = true;
-
-  getTide();
-}
-
-
-//This function inserats a note about the source of the data into the HTML document.
-function footnote() {
-  var tideNote = locationData.getElementsByTagName("FOOTNOTE")[0].childNodes[0].nodeValue;
-  tideNote = "NOTE: " + tideNote + "All data is obtained from NOAA.";
-  document.getElementById("note").innerHTML = tideNote;
 }
 
