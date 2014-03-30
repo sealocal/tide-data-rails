@@ -135,15 +135,6 @@ function getTide(annualData) {
     document.getElementById("31").disabled = false;
   }
 
-  //Change day value so it corresponds to correct element tag in XML DOM structure.
-  //There are 14 elements inside the root of each of the tidal data XML documents.
-  //Internext Explorer will return 14.
-  //Firefox will return 29.
-  if (annualData.documentElement.childNodes.length === 29) {
-    day = day * 2 + 3;
-  } else if (annualData.documentElement.childNodes.length === 14) {
-    day = day + 1;
-  }
 
   //Finds tide data for the given date, formatted as a string.
   //Example: "01/04/2010 Mon 12:07AM LST -1.6 L 07:23AM LST 9.8 H 01:23PM LST 4.8 L 06:05PM LST 7.1 H"
