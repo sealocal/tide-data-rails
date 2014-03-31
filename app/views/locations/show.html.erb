@@ -4,7 +4,7 @@
 <br />
 <br />
 <br />
-<h1 class="show">
+<h1 id="locations_show">
   <span id="SelectedLocation">
     <%= @location_name %>
   </span>
@@ -69,34 +69,32 @@
   </select>
 </form>
 <br />
-<%= content_tag :div, id: "annual_data", data: {tides: @annual_data} do %>
-<% end %>
 <br />
 <table id="tides" class="center">
   <tr>
-    <th colspan = "2">Tides for
+    <th colspan="2">Tides for
       <span id="tabledate"></span>
       <br />
     </th>
   </tr>
   <tr>
-    <td colspan = "2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td class="left"><span id = "firsttide"></span></td>
-    <td class="right"><span id = "tidetime1"></span></td>
+    <td class="left"><span id="firsttide"></span></td>
+    <td class="right"><span id="tidetime1"></span></td>
   </tr>
   <tr>
-    <td class="left"><span id = "secondtide"></span></td>
-    <td class="right"><span id = "tidetime2"></span></td>
+    <td class="left"><span id="secondtide"></span></td>
+    <td class="right"><span id="tidetime2"></span></td>
   </tr>
   <tr>
-    <td class="left"><span id = "thirdtide"></span></td>
-    <td class="right"><span id = "tidetime3"></span></td>
+    <td class="left"><span id="thirdtide"></span></td>
+    <td class="right"><span id="tidetime3"></span></td>
   </tr>
   <tr>
-    <td class="left"><span id = "fourthtide"></span></td>
-    <td class="right"><span id = "tidetime4"></span></td>
+    <td class="left"><span id="fourthtide"></span></td>
+    <td class="right"><span id="tidetime4"></span></td>
   </tr>
 </table>
 <br />
@@ -106,7 +104,8 @@
   <%= "NOTE: " + @footnote + "All data is obtained from NOAA." %>
 </p>
 <br />
-
+<%= content_tag :div, id: "annual_data", data: {tides: @annual_data} do %>
+<% end %>
 <script type="text/javascript">
   setToday();
   getTide();
