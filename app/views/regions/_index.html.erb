@@ -23,42 +23,10 @@
     <%# print out each region %>
     <%# use @state.regions or just @regions %>
     <%# for each region folder in the state's directory %>
-    <%# @regions.each do |region| %>
-    <% 1.times do |n| %>
+    <% @regions_array.each do |region| %>
       <tr>
         <td class="center">
-          <% region = 'East Coast Beaches' %>
           <%= link_to region, "#{@state_name}/regions/#{region}" %>
-        </td>
-      </tr>
-      <tr>
-        <td class ="center">
-          <% region = "Florida Keys" %>
-          <%= link_to region, "#{@state_name}/regions/Florida Keys" %>
-        </td>
-      </tr>
-      <tr>
-        <td class ="center">
-          <% region = "Gulf Coast Beaches" %>
-          <%= link_to region, "#{@state_name}/regions/Gulf Coast Beaches" %>
-        </td>
-      </tr>
-      <tr>
-        <td class ="center">
-          <% region = "Nassau Sound and Fort George River" %>
-          <%= link_to region, "#{@state_name}/regions/Nassau Sound and Fort George River" %>
-        </td>
-      </tr>
-      <tr>
-        <td class ="center">
-          <% region = "St. John's River" %>
-          <%= link_to region, "#{@state_name}/regions/St. John's River" %>
-        </td>
-      </tr>
-      <tr>
-        <td class ="center">
-          <% region = "Tampa Bay" %>
-          <%= link_to region, "#{@state_name}/regions/Tampa Bay" %>
         </td>
       </tr>
     <% end %>
