@@ -2,20 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1.index {
-  position: relative;
-  letter-spacing: 10px;
-  word-spacing: 14px;
-  top: -20px;
-}
-
 p.capitalize {
   text-transform: capitalize;
   line-height: 40%;
   font-size: 1.05em;
 }
 
-#container {
+#locations_index.container {
   position: relative;
   top: -45px;
   left: 7px;
@@ -26,16 +19,10 @@ p.capitalize {
   margin-right: auto;
 }
 
-table, td, th {
-  border-collapse: collapse;
-  text-align: center;
-  //border: 1px solid black;
-}
-
 .column {
   float: left;
-  padding: 20px;
-  width: 100%;
+  // padding: 20px;
+  // width: 100%;
   /*width: 25%*/
   /*width: 33%*/
   /*width: 50%*/
@@ -43,8 +30,9 @@ table, td, th {
 
 //Locations#show
 
-h1.show, form {
+h1#locations_show, form {
   text-align: center;
+  //height: 20px;
 }
 
 //location name
@@ -59,42 +47,39 @@ select {
   font-size: 1.5em
 }
 
-.center {
+table#tides.center {
+  float: none;
+  border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
-  //background-color: red;
 }
 
-table#tides th {
+table#tides tr th {
   font-size: 160%;
   font-family: "Arial";
 }
 
-table#tides td {
-  //border-style: solid;
-  text-align: right;
+table#tides tr td {
+  font-size: 120%;
   font-family: "Arial";
   font-weight: bold;
-  font-size: 120%;
 }
 
 td.left {
-  text-align:right;
+  text-align: right;
 }
 
 td.right {
-  text-align:left;
-  padding-left:20px;
-  width:67%;
+  text-align: left;
+  padding-left: 20px;
+  width: 67%;
 }
 
 #note {
-  margin-left:auto;
-  margin-right:auto;
-  width:30%;
-  font-size:70%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  font-size: 70%;
   //font-weight:bolder;
   //color:red;
 }
-
-

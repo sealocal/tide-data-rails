@@ -4,28 +4,25 @@
 <br />
 <br />
 <br />
-<div id="container">
+<div id="regions_index" class="container">
   <br />
-  <table id="tableleft">
+  <table id="tableleft" class="regions_index">
     <tr>
-      <th class="left" rowspan = "5">
+      <th class="left regions_index" rowspan = "5">
         <%= @state_name %>
       </th>
     </tr>
   </table>
-  <table id="tablecenter">
+  <table id="tablecenter" class="regions_index">
     <tr>
-      <th class="center">&nbsp;</th>
+      <th class="regions_index">&nbsp;</th>
     </tr>
     <tr>
-      <td class="center">&nbsp;</td>
+      <td class="regions_index">&nbsp;</td>
     </tr>
-    <%# print out each region %>
-    <%# use @state.regions or just @regions %>
-    <%# for each region folder in the state's directory %>
     <% @regions_array.each do |region| %>
       <tr>
-        <td class="center">
+        <td class="regions_index">
           <%= link_to region, "#{@state_name}/regions/#{region}" %>
         </td>
       </tr>
