@@ -9,6 +9,7 @@ class StatesController < ApplicationController
     xml_dir.each_entry do |file_path|
       @regions_array << file_path.to_s
     end
+    @regions_array.sort!
     @regions_array.shift
     @regions_array.shift
     @regions_array.map! { |file_name| file_name.sub(".xml", "") }
