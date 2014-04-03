@@ -12,17 +12,18 @@
 
 <div id="locations_index" class="container">
   <div id="locationColumns">
+    <% number_of_rows_per_column = @locations_array.size / @number_of_columns %>
     <% @locations_array.each_with_index do |location, i| %>
 
-      <% if i < @locations_array.size / @number_of_columns * 1 %>
+      <% if i < number_of_rows_per_column * 1 %>
         <%= link_to locations_path(@state_name, location), class: "column_1" do %>
           <p class="capitalize"><%= "#{location}" %></p>
         <% end %>
-      <% elsif i < @locations_array.size / @number_of_columns * 2 %>
+      <% elsif i < number_of_rows_per_column * 2 %>
         <%= link_to locations_path(@state_name, location), class: "column_2" do %>
           <p class="capitalize"><%= "#{location}" %></p>
         <% end %>
-      <% elsif i < @locations_array.size / @number_of_columns * 3 %>
+      <% elsif i < number_of_rows_per_column * 3 %>
         <%= link_to locations_path(@state_name, location), class: "column_3" do %>
           <p class="capitalize"><%= "#{location}" %></p>
         <% end %>
