@@ -5,7 +5,7 @@ class StatesController < ApplicationController
   def show
     @state_name = params[:state_name]
     @regions_array = Array.new
-    xml_dir = Rails.root.join 'app/xml/',  @state_name, 'regions'
+    xml_dir = Rails.root.join 'app/xml/2013', @state_name
     xml_dir.each_entry do |file_path|
       @regions_array << file_path.to_s
     end
