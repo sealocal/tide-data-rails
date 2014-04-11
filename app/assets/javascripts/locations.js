@@ -115,37 +115,45 @@ function getTide() {
     document.getElementById("31").disabled = false;
   }
 
+  //Find all items that match the date
+  var tide_items = $('div').data('tides').datainfo.data.item
+  var dates = $.map(tide_items, function(value, index) {
+    return value.date
+  });
+  var tides_of_the_day = []
 
-  //Finds tide data for the given date, formatted as a string.
-  //Example: "01/04/2010 Mon 12:07AM LST -1.6 L 07:23AM LST 9.8 H 01:23PM LST 4.8 L 06:05PM LST 7.1 H"
-  var tideChoice = annualData.TIDETABLE.MONTH[month].DATE[day].trim();
+  //Pad dates with zeroes so that '2014/4/7' becomes '2014/04/07' (YYYY/MD/DD)
+  month += 1;
+  month = ('0' + month).slice(-2);
+  day = ('0' + day).slice(-2);
 
-  //Set the indexes of the times in tideChoice.
-  //The first tide time will begin at the 16th character.
-  var time1Index = 15;
-  var time2Index = 35;
-  var time3Index = 55;
-  var time4Index = 75;
+  for (i = 0; i < dates.length; i++) {
+    if (dates[i] ==  year + "/" + month + "/" + day) {
+      tides_of_the_day.push(tide_items[i])
+    }
+  }
 
-  //Set the indexes of the tides ("H" or "L").
-  var tide1Index = 32;
-  var tide2Index = 52;
-  var tide3Index = 72;
-  var tide4Index = 92;
+  var times = new Array(4);
+  var tides = new Array(4);
+  for (i = 0; i < tides_of_the_day.length; i++) {
+    times[i] = tides_of_the_day[i].time
+    tides[i] = tides_of_the_day[i].highlow
+  }
 
-  //Insert H and L labels into the HTML document.
-  document.getElementById("firsttide").innerHTML = tideChoice.substr(tide1Index, 2);
-  document.getElementById("secondtide").innerHTML = tideChoice.substr(tide2Index, 2);
-  document.getElementById("thirdtide").innerHTML = tideChoice.substr(tide3Index, 2);
-  document.getElementById("fourthtide").innerHTML = tideChoice.substr(tide4Index, 2);
+  for (i = 0; i < tides.length; i++) {
+    if (tides[i] === undefined) {
+      tides[i] = ""
+    }
+    document.getElementById("tide" + (i + 1)).innerHTML = tides[i];
+  }
 
-  //Insert times for each H and L tide into the HTML document.
-  document.getElementById("tidetime1").innerHTML = tideChoice.substr(time1Index, 8);
-  document.getElementById("tidetime2").innerHTML = tideChoice.substr(time2Index, 8);
-  document.getElementById("tidetime3").innerHTML = tideChoice.substr(time3Index, 8);
-  document.getElementById("tidetime4").innerHTML = tideChoice.substr(time4Index, 8);
+  for (i = 0; i < times.length; i++) {
+    if (times[i] === undefined) {
+      times[i] = ""
+    }
+    document.getElementById("time" + (i + 1)).innerHTML = times[i];
+  }
 }
-
 
 function setToday() {
   //Declare a Date() object and store the date, month, and year separately
@@ -174,7 +182,7 @@ function setToday() {
   document.getElementById(monthArray[todaysMonth]).selected = true;
   //This line should set the date to the current year.
   //document.getElementById(todaysYear).selected = true;
-  //However, the XML tidal data is outdated, so the year will be set to 2010 using this line.
-  document.getElementById("2010").selected = true;
+  //However, the XML tidal data is outdated, so the year will be set to 2013 using this line.
+  document.getElementById("2013").selected = true;
 }
 
