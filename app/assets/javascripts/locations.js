@@ -140,14 +140,11 @@ function getTide() {
     tides[i] = tides_of_the_day[i].highlow
   }
 
-  for (i = 0; i < tides.length; i++) {
+  for (i = 0; i < Math.max(times.length, tides.length); i++) {
     if (tides[i] === undefined) {
       tides[i] = ""
     }
     document.getElementById("tide" + (i + 1)).innerHTML = tides[i];
-  }
-
-  for (i = 0; i < times.length; i++) {
     if (times[i] === undefined) {
       times[i] = ""
     }
