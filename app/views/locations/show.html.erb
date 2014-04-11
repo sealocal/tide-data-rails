@@ -64,8 +64,7 @@
   &nbsp;
   &nbsp;
   <select id="year" onchange="getTide()">
-    <option id="2010" value="2010">2010</option>
-    <!-- <option id="2009" value="2009">2009</option> -->
+    <option id="2013" value="2013">2013</option>
   </select>
 </form>
 <br />
@@ -81,27 +80,27 @@
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td class="left"><span id="firsttide"></span></td>
-    <td class="right"><span id="tidetime1"></span></td>
+    <td class="left"><span id="tide1"></span></td>
+    <td class="right"><span id="time1"></span></td>
   </tr>
   <tr>
-    <td class="left"><span id="secondtide"></span></td>
-    <td class="right"><span id="tidetime2"></span></td>
+    <td class="left"><span id="tide2"></span></td>
+    <td class="right"><span id="time2"></span></td>
   </tr>
   <tr>
-    <td class="left"><span id="thirdtide"></span></td>
-    <td class="right"><span id="tidetime3"></span></td>
+    <td class="left"><span id="tide3"></span></td>
+    <td class="right"><span id="time3"></span></td>
   </tr>
   <tr>
-    <td class="left"><span id="fourthtide"></span></td>
-    <td class="right"><span id="tidetime4"></span></td>
+    <td class="left"><span id="tide4"></span></td>
+    <td class="right"><span id="time4"></span></td>
   </tr>
 </table>
 <br />
 <br />
 <br />
 <p id="note">
-  <%= "NOTE: " + @footnote + "All data is obtained from NOAA." %>
+  <%= "NOTE: " + "All times are listed in Local Standard Time(LST) or, Local Daylight Time (LDT) (when applicable). All heights are in feet referenced to Mean Lower Low Water (MLLW)." + "All data is obtained from NOAA." %>
 </p>
 <br />
 <%= content_tag :div, id: "annual_data", data: {tides: @annual_data} do %>
