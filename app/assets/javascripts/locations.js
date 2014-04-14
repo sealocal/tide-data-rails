@@ -180,6 +180,6 @@ function setToday() {
   //This line should set the date to the current year.
   //document.getElementById(todaysYear).selected = true;
   //However, the XML tidal data is outdated, so the year will be set to 2013 using this line.
-  document.getElementById("2013").selected = true;
+  document.getElementById("2014").selected = true;
 }
 
