@@ -1,3 +1,9 @@
+<% content_for(:keywords) do %>
+  <% keywords = @state_name + ', ' + @state_name + ' State, ' + @regions_array.join(', ') %>
+  <% keywords += ", tide, tide chart, tide charts, tide height, tide prediction, tide predictions, tides, tide table, surf, sail, dive" %>
+  <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
+<% end %>
+
 <h1 class="index">
   Select a region:
 </h1>

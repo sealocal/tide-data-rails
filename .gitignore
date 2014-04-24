@@ -15,6 +15,10 @@
 /log/*.log
 /tmp
 
+# Ignore keywords spreadsheet and it's temp file.
+/keywords.xlsx
+/~$keywords.xlsx
+
 *.rbc
 *.sassc
 .sass-cache

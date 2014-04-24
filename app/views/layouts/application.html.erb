@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The easiest guide to Low and High Tide time predictions for beaches and rivers in the United States.  Built for fishermen, surfers, and sailors. TideData.com">
+    <meta name="description" content="The easiest guide to Low and High Tide time predictions for beaches and rivers in the United States.  Built for fishermen, surfers, divers, and sailors. TideData.com &copy;2014">
     <meta name="author" content="Mike Taylor">
-    <meta name="keywords" content="tide, tides, table, tables, tide table, tide charts, tide chart, low Tide, high Tide, tide height, tide prediction, tide predictions, gulf coast, Florida Keys, Texas, Louisiana, Mississippi,Alabama, Florida, Georgia, North Carolina, South Carolina, Virginia, Maryland, Maine, Massachusetts, Rhode Island, New Hampshire, Connecticut, New York, New Jersey, California, Washington, Oregon, Atlantic, Pacific, East Coast, West Coast, ocean, surf, surfing, fish, fishing, boat, boating, sailing">
+
+    <% if content_for?(:keywords) %>
+      <%= yield(:keywords) %>
+    <% else %>
+      <meta name="keywords" content="tide, tides, table, tables, tide table, tide charts, tide chart, low Tide, high Tide, tide height, tide prediction, tide predictions, gulf coast, Florida Keys, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia, North Carolina, South Carolina, Virginia, Maryland, Maine, Massachusetts, Rhode Island, New Hampshire, Connecticut, New York, New Jersey, California, Washington, Oregon, Atlantic, Pacific, East Coast, West Coast, ocean, surf, surfers, surfing, fish, fishermen, fishing, boat, boaters, boating, sail, sailors, sailing, dive, divers, diving, scuba">
+    <% end %>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
