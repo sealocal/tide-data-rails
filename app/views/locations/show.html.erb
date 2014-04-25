@@ -1,3 +1,9 @@
+<% content_for(:keywords) do %>
+  <% keywords = "#{@state_name}, " + "#{@state_name} State, " + @location_name %>
+  <% keywords += ", tide, tide chart, tide charts, tide height, tide prediction, tide predictions, tides, tide table, surf, sail, dive" %>
+  <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
+<% end %>
+
 <% content_for(:title) do %>
   High and Low Tides of the day for <%= @location_name.titleize %>
 <% end %>
