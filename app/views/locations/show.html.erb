@@ -1,12 +1,18 @@
+<% content_for(:title) do %>
+  High and Low Tides of the day for <%= @location_name.titleize %>
+<% end %>
+
 <% content_for(:keywords) do %>
   <% keywords = "#{@state_name}, " + "#{@state_name} State, " + @location_name %>
   <% keywords += ", tide, tide chart, tide charts, tide height, tide prediction, tide predictions, tides, tide table, surf, sail, dive" %>
   <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
 <% end %>
 
-<% content_for(:title) do %>
-  High and Low Tides of the day for <%= @location_name.titleize %>
+<% content_for(:description) do %>
+  <% description = "High and Low Tides for #{@location_name}, in #{@region_name}, #{@state_name}. TideData.com &copy; 2014" %>
+  <%= tag("meta", {name: "description", content: "#{description}"}, false, false) %>
 <% end %>
+
 <br />
 <br />
 <br />
