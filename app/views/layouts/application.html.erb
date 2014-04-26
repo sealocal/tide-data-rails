@@ -3,8 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The easiest guide to Low and High Tide time predictions for beaches and rivers in the United States.  Built for fishermen, surfers, divers, and sailors. TideData.com &copy;2014">
     <meta name="author" content="Mike Taylor">
+
+    <title>
+      <%= content_for?(:title) ? yield(:title) : "TideData.com - High " +
+               "and Low Tide times for beaches and rivers in the U.S." %>
+    </title>
+
+    <% if content_for?(:description) %>
+      <%= yield(:description)  %>
+    <% else %>
+      <meta name="description" content="The easiest guide to Low and High Tide time predictions for beaches and rivers in the United States.  Built for fishermen, surfers, divers, and sailors. TideData.com &copy;2014">
+    <% end %>
 
     <% if content_for?(:keywords) %>
       <%= yield(:keywords) %>
@@ -23,10 +33,6 @@
       ga('send', 'pageview');
     </script>
 
-    <title>
-      <%= content_for?(:title) ? yield(:title) : "TideData.com - High " +
-               "and Low Tide times for beaches and rivers in the U.S." %>
-    </title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>

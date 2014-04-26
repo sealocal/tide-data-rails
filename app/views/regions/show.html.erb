@@ -8,4 +8,9 @@
   <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
 <% end %>
 
+<% content_for(:description) do %>
+  <% description = "High and Low Tides for #{@region_name}, #{@state_name}. TideData.com &copy; 2014" %>
+  <%= tag("meta", {name: "description", content: "#{description}"}, false, false) %>
+<% end %>
+
 <%= render 'locations/index' %>
