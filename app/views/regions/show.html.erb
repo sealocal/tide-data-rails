@@ -1,1 +1,11 @@
+<% content_for(:title) do %>
+  <%= "#{@region_name} | #{@state_name} | High and Low Tides" %>
+<% end %>
+
+<% content_for(:keywords) do %>
+  <% keywords = "#{@state_name}, " + "#{@state_name} State, " + "#{@region_name}, " + @locations_array.join(', ') %>
+  <% keywords += ", tide, tide chart, tide charts, tide height, tide prediction, tide predictions, tides, tide table, surf, sail, dive" %>
+  <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
+<% end %>
+
 <%= render 'locations/index' %>

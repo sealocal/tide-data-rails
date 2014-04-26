@@ -9,7 +9,8 @@
     <% if content_for?(:keywords) %>
       <%= yield(:keywords) %>
     <% else %>
-      <meta name="keywords" content="tide, tides, table, tables, tide table, tide charts, tide chart, low Tide, high Tide, tide height, tide prediction, tide predictions, gulf coast, Florida Keys, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia, North Carolina, South Carolina, Virginia, Maryland, Maine, Massachusetts, Rhode Island, New Hampshire, Connecticut, New York, New Jersey, California, Washington, Oregon, Atlantic, Pacific, East Coast, West Coast, ocean, surf, surfers, surfing, fish, fishermen, fishing, boat, boaters, boating, sail, sailors, sailing, dive, divers, diving, scuba">
+      <% keywords = "tide, tides, table, tables, tide table, tide charts, tide chart, low Tide, high Tide, tide height, tide prediction, tide predictions, gulf coast, Florida Keys, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia, North Carolina, South Carolina, Virginia, Maryland, Maine, Massachusetts, Rhode Island, New Hampshire, Connecticut, New York, New Jersey, California, Washington, Oregon, Atlantic, Pacific, East Coast, West Coast, ocean, surf, surfers, surfing, fish, fishermen, fishing, boat, boaters, boating, sail, sailors, sailing, dive, divers, diving, scuba"%>
+      <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
     <% end %>
 
     <script>
