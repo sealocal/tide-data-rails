@@ -1,27 +1,18 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-mobile point (fort morgan)
-</LOCATION>
-<LOCATION>
-dauphin island
-</LOCATION>
-<LOCATION>
-bon secour, bon secour river
-</LOCATION>
-<LOCATION>
-fowl river, mobile bay entrance
-</LOCATION>
-<LOCATION>
-great point clear, mobile bay
-</LOCATION>
-<LOCATION>
-mobile
-</LOCATION>
-<LOCATION>
-lower hall landing, tensaw river
-</LOCATION>
-<LOCATION>
-bayou la batre, mississippi sound
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION name="Alabama">
+<LOCATION class="stationname region-0">Alabama Point, Perdido Bay</LOCATION>
+<LOCATION class="stationname region-0">Mobile Point (Fort Morgan)</LOCATION>
+<LOCATION class="stationname region-0">GULF SHORES, ICWW</LOCATION>
+<LOCATION class="stationname region-0">Bon Secour, Bon Secour River</LOCATION>
+<LOCATION class="stationname region-0">DAUPHIN ISLAND</LOCATION>
+<LOCATION class="stationname region-0">EAST FOWL RIVER BRIDGE</LOCATION>
+<LOCATION class="stationname region-0">WEST FOWL RIVER BRIDGE</LOCATION>
+<LOCATION class="stationname region-0">POINT CLEAR, MOBILE BAY</LOCATION>
+<LOCATION class="stationname region-0">DOG RIVER BRIDGE</LOCATION>
+<LOCATION class="stationname region-0">MEAHER STATE PARK, MOBILE BAY</LOCATION>
+<LOCATION class="stationname region-0">MOBILE STATE DOCKS</LOCATION>
+<LOCATION class="stationname region-0">CHICKASAW CREEK</LOCATION>
+<LOCATION class="stationname region-0">Lower Hall Landing, Tensaw River</LOCATION>
+<LOCATION class="stationname region-0">Bayou La Batre, Mississippi Sound</LOCATION>
+<LOCATION class="stationname region-0">BAYOU LA BATRE BRIDGE</LOCATION>
+</REGION>
