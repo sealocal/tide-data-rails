@@ -1,45 +1,21 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-point of pines, bayou cumbest
-</LOCATION>
-<LOCATION>
-hollingsworth point, davis bayou
-</LOCATION>
-<LOCATION>
-ship island, mississippi sound
-</LOCATION>
-<LOCATION>
-horn island, mississippi sound
-</LOCATION>
-<LOCATION>
-pascagoula, mississippi sound
-</LOCATION>
-<LOCATION>
-gulfport harbor, mississippi sound
-</LOCATION>
-<LOCATION>
-biloxi (cadet point), biloxi bay
-</LOCATION>
-<LOCATION>
-turkey creek, bernard bayou
-</LOCATION>
-<LOCATION>
-cat island
-</LOCATION>
-<LOCATION>
-pass christian yacht club, mississippi sound
-</LOCATION>
-<LOCATION>
-wolf river, henderson avenue bridge
-</LOCATION>
-<LOCATION>
-st. louis bay entrance
-</LOCATION>
-<LOCATION>
-waveland
-</LOCATION>
-<LOCATION>
-pearlington, pearl river
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION name="Mississippi">
+<LOCATION class="stationname region-0">Grand Bay NERR, Mississippi Sound</LOCATION>
+<LOCATION class="stationname region-0">Point of Pines, Bayou Cumbest</LOCATION>
+<LOCATION class="stationname region-0">Hollingsworth Point, Davis Bayou</LOCATION>
+<LOCATION class="stationname region-0">PETIT BOIS ISLAND, MISSISSIPPI SOUND</LOCATION>
+<LOCATION class="stationname region-0">Ship Island, Mississippi Sound</LOCATION>
+<LOCATION class="stationname region-0">HORN ISLAND</LOCATION>
+<LOCATION class="stationname region-0">DOCK E, PORT OF PASCAGOULA</LOCATION>
+<LOCATION class="stationname region-0">PASCAGOULA POINT</LOCATION>
+<LOCATION class="stationname region-0">GULFPORT HARBOR</LOCATION>
+<LOCATION class="stationname region-0">Biloxi (Cadet Point), Biloxi Bay</LOCATION>
+<LOCATION class="stationname region-0">Turkey Creek, Bernard Bayou</LOCATION>
+<LOCATION class="stationname region-0">HANDSBORO BRIDGE, BERNARD BAYOU</LOCATION>
+<LOCATION class="stationname region-0">Cat Island</LOCATION>
+<LOCATION class="stationname region-0">Pass Christian Yacht Club, Mississippi Sound</LOCATION>
+<LOCATION class="stationname region-0">Wolf River, Henderson Avenue bridge</LOCATION>
+<LOCATION class="stationname region-0">BAY WAVELAND YACHT CLUB</LOCATION>
+<LOCATION class="stationname region-0">WAVELAND</LOCATION>
+<LOCATION class="stationname region-0">Pearlington, Pearl River</LOCATION>
+</REGION>
