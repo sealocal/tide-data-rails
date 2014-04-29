@@ -14,3 +14,10 @@
 <% end %>
 
 <%= render 'locations/index' %>
+
+<script type="text/javascript">
+  nameOfLocations = $('#locations_show #SelectedLocation'); //an array of strings?
+  $('#locations_show #SelectedLocation').text(
+    customizeDisplayText(nameOfLocations)
+  );
+</script>

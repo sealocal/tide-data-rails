@@ -1,18 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-zapadni bay, st. george island
-</LOCATION>
-<LOCATION>
-village cove, st. paul island
-</LOCATION>
-<LOCATION>
-st. matthew island
-</LOCATION>
-<LOCATION>
-fossil river entrance
-</LOCATION>
-<LOCATION>
-niyrakpak lagoon entrance
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-29" name="Bering Sea"><LOCATION class="stationname region-29 sub_region-41">Zapadni Bay, St. George Island</LOCATION><LOCATION class="stationname region-29 sub_region-41">VILLAGE COVE, ST PAUL ISLAND</LOCATION><LOCATION class="stationname region-29 sub_region-41">St. Matthew Island</LOCATION><LOCATION class="stationname region-29 sub_region-42">NORTHEAST CAPE, ST. LAWRENCE ISLAND</LOCATION><LOCATION class="stationname region-29 sub_region-42">Fossil River entrance</LOCATION><LOCATION class="stationname region-29 sub_region-42">Niyrakpak Lagoon entrance</LOCATION></REGION>

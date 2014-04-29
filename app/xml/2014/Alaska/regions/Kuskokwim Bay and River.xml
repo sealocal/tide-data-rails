@@ -1,15 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-platinum
-</LOCATION>
-<LOCATION>
-goodnews bay entrance
-</LOCATION>
-<LOCATION>
-apokak creek entrance
-</LOCATION>
-<LOCATION>
-bethel
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-28" name="Kuskokwim Bay and River"><LOCATION class="stationname region-28 sub_region-41">PLATINUM, AK</LOCATION><LOCATION class="stationname region-28 sub_region-41">Goodnews Bay entrance</LOCATION><LOCATION class="stationname region-28 sub_region-41">CARTER BAY, KUSKOKWIM BAY</LOCATION><LOCATION class="stationname region-28 sub_region-41">QUINHAGAK (KWINAK), KUSHKOKWIN RIVER</LOCATION><LOCATION class="stationname region-28 sub_region-41">Apokak Creek entrance</LOCATION><LOCATION class="stationname region-28 sub_region-41">POPOKAMUTE (KOKOKAMUTE), KUSKOKWIM RIVER</LOCATION><LOCATION class="stationname region-28 sub_region-41">HELMICK POINT</LOCATION><LOCATION class="stationname region-28 sub_region-41">LOMAVIK</LOCATION><LOCATION class="stationname region-28 sub_region-41">BETHEL, KUSKOKWIM RIVER, AK</LOCATION><LOCATION class="stationname region-28 sub_region-41">MEKORYUK, MEKORYUK RIVER ENTRANCE</LOCATION><LOCATION class="stationname region-28 sub_region-41">Nelson Island, Tooksook Bay</LOCATION></REGION>

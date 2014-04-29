@@ -1,21 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-dofflemeyer point, boston hbr., budd inlet
-</LOCATION>
-<LOCATION>
-budd inlet, olympia shoal
-</LOCATION>
-<LOCATION>
-olympia, budd inlet
-</LOCATION>
-<LOCATION>
-glendale, whidbey island
-</LOCATION>
-<LOCATION>
-everett
-</LOCATION>
-<LOCATION>
-marysville, quilceda creek
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-8" name="Possession Sound and Port Susan"><LOCATION class="stationname region-8">Glendale, Whidbey Island</LOCATION><LOCATION class="stationname region-8">EVERETT</LOCATION><LOCATION class="stationname region-8">Marysville, Quilceda Creek</LOCATION><LOCATION class="stationname region-8">TULALIP, TULALIP BAY</LOCATION><LOCATION class="stationname region-8">TULARE BEACH, PORT SUSAN</LOCATION><LOCATION class="stationname region-8">Kayak Point</LOCATION><LOCATION class="stationname region-8">Stanwood, Stillaguamish River</LOCATION></REGION>

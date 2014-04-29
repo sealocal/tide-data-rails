@@ -1,12 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-security cove
-</LOCATION>
-<LOCATION>
-sakie bay
-</LOCATION>
-<LOCATION>
-sea otter harbor
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-6" name="Dall Island, west coast"><LOCATION class="stationname region-6 sub_region-5">Security Cove</LOCATION><LOCATION class="stationname region-6 sub_region-5">Sakie Bay</LOCATION><LOCATION class="stationname region-6 sub_region-5">Sea Otter Harbor</LOCATION></REGION>

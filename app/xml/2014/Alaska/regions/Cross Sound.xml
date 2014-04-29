@@ -1,9 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-elfin cove, port althorp
-</LOCATION>
-<LOCATION>
-inian cove, north inian pass
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-18" name="Cross Sound"><LOCATION class="stationname region-18 sub_region-12">ELFIN COVE</LOCATION><LOCATION class="stationname region-18 sub_region-12">Inian Cove, North Inian Pass</LOCATION></REGION>

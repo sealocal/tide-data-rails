@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-smith island
-</LOCATION>
-<LOCATION>
-point partridge, whidbey island
-</LOCATION>
-<LOCATION>
-sunset beach, whidbey island
-</LOCATION>
-<LOCATION>
-admiralty head
-</LOCATION>
-<LOCATION>
-port townsend
-</LOCATION>
-<LOCATION>
-port townsend (point hudson)
-</LOCATION>
-<LOCATION>
-marrowstone point
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-5" name="Admiralty Inlet"><LOCATION class="stationname region-5">Admiralty Head</LOCATION><LOCATION class="stationname region-5">PORT TOWNSEND</LOCATION><LOCATION class="stationname region-5">Port Townsend (Point Hudson)</LOCATION><LOCATION class="stationname region-5">Marrowstone Point</LOCATION><LOCATION class="stationname region-5">Mystery Bay, Marrowstone Island</LOCATION><LOCATION class="stationname region-5">Bush Point, Whidbey Island</LOCATION><LOCATION class="stationname region-5">Oak Bay</LOCATION></REGION>

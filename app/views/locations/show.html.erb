@@ -120,4 +120,9 @@
 <script type="text/javascript">
   setToday();
   getTide();
+  nameOfLocation = $('#locations_show #SelectedLocation').text();
+  nameOfLocations = [nameOfLocation]; //an array of Strings
+  $('#locations_show #SelectedLocation').text(
+    customizeDisplayText(nameOfLocations)
+  );
 </script>

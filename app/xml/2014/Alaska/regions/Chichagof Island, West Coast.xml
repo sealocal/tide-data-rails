@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-falcon arm, slocum arm
-</LOCATION>
-<LOCATION>
-elbow passage, klag bay
-</LOCATION>
-<LOCATION>
-kimshan cove, ogden passage
-</LOCATION>
-<LOCATION>
-canoe cove, north pass
-</LOCATION>
-<LOCATION>
-miner island
-</LOCATION>
-<LOCATION>
-takanis bay
-</LOCATION>
-<LOCATION>
-surge bay
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-17" name="Chichagof Island, west coast"><LOCATION class="stationname region-17 sub_region-10">Falcon Arm, Slocum Arm</LOCATION><LOCATION class="stationname region-17 sub_region-10">Elbow Passage, Klag Bay</LOCATION><LOCATION class="stationname region-17 sub_region-10">Kimshan Cove, Ogden Passage</LOCATION><LOCATION class="stationname region-17 sub_region-11">Canoe Cove, North Pass</LOCATION><LOCATION class="stationname region-17 sub_region-11">Miner Island</LOCATION><LOCATION class="stationname region-17 sub_region-11">PELICAN HARBOR, LISIANSKI INLET, AK</LOCATION><LOCATION class="stationname region-17 sub_region-12">Takanis Bay</LOCATION><LOCATION class="stationname region-17 sub_region-12">Surge Bay</LOCATION></REGION>
