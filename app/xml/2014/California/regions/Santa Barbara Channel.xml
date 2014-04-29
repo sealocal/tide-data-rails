@@ -1,21 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-mugu lagoon (ocean pier)
-</LOCATION>
-<LOCATION>
-port hueneme
-</LOCATION>
-<LOCATION>
-ventura
-</LOCATION>
-<LOCATION>
-rincon island, mussel shoals
-</LOCATION>
-<LOCATION>
-santa barbara
-</LOCATION>
-<LOCATION>
-gaviota
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-4" name="Santa Barbara Channel"><LOCATION class="stationname region-4">Mugu Lagoon (ocean pier)</LOCATION><LOCATION class="stationname region-4">Port Hueneme</LOCATION><LOCATION class="stationname region-4">Ventura</LOCATION><LOCATION class="stationname region-4">Rincon Island, Mussel Shoals</LOCATION><LOCATION class="stationname region-4">SANTA BARBARA</LOCATION><LOCATION class="stationname region-4">GAVIOTA STATE PARK, PACIFIC OCEAN</LOCATION></REGION>

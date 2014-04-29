@@ -1,27 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-wilson cove, san clemente island
-</LOCATION>
-<LOCATION>
-catalina harbor, santa catalina island
-</LOCATION>
-<LOCATION>
-avalon, santa catalina island
-</LOCATION>
-<LOCATION>
-santa barbara island
-</LOCATION>
-<LOCATION>
-san nicolas island
-</LOCATION>
-<LOCATION>
-prisoners harbor, santa cruz island
-</LOCATION>
-<LOCATION>
-bechers bay, santa rosa island
-</LOCATION>
-<LOCATION>
-cuyler harbor, san miguel island
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-5" name="Santa Barbara Islands"><LOCATION class="stationname region-5">Wilson Cove, San Clemente Island</LOCATION><LOCATION class="stationname region-5">Catalina Harbor, Santa Catalina Island</LOCATION><LOCATION class="stationname region-5">Avalon, Santa Catalina Island</LOCATION><LOCATION class="stationname region-5">Santa Barbara Island</LOCATION><LOCATION class="stationname region-5">San Nicolas Island</LOCATION><LOCATION class="stationname region-5">Prisoners Harbor, Santa Cruz Island</LOCATION><LOCATION class="stationname region-5">Bechers Bay, Santa Rosa Island</LOCATION><LOCATION class="stationname region-5">Cuyler Harbor, San Miguel Island</LOCATION></REGION>

@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-morse cove, duke island
-</LOCATION>
-<LOCATION>
-kah shakes cove
-</LOCATION>
-<LOCATION>
-boca de quadra
-</LOCATION>
-<LOCATION>
-mop point, thorne arm
-</LOCATION>
-<LOCATION>
-coon island, george inlet
-</LOCATION>
-<LOCATION>
-ketchikan
-</LOCATION>
-<LOCATION>
-ward cove
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-2" name="Revillagigedo Channel"><LOCATION class="stationname region-2 sub_region-2">Morse Cove, Duke Island</LOCATION><LOCATION class="stationname region-2 sub_region-2">Kah Shakes Cove</LOCATION><LOCATION class="stationname region-2 sub_region-2">Boca de Quadra</LOCATION><LOCATION class="stationname region-2 sub_region-2">CUSTOM HOUSE COVE, MARY ISLAND</LOCATION><LOCATION class="stationname region-2 sub_region-2">Mop Point, Thorne Arm</LOCATION><LOCATION class="stationname region-2 sub_region-2">Coon Island, George Inlet</LOCATION><LOCATION class="stationname region-2 sub_region-2">KETCHIKAN</LOCATION><LOCATION class="stationname region-2 sub_region-2">Ward Cove</LOCATION></REGION>

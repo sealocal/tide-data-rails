@@ -14,3 +14,9 @@
 <% end %>
 
 <%= render 'regions/index' %>
+
+<script type="text/javascript">
+  locationName = $('#locations_show #SelectedLocation');
+  locationNames = [locationName];
+  customizeDisplayText(locationNames);
+</script>

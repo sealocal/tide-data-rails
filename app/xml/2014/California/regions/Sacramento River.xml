@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-collinsville
-</LOCATION>
-<LOCATION>
-threemile slough
-</LOCATION>
-<LOCATION>
-rio vista
-</LOCATION>
-<LOCATION>
-steamboat slough, snug harbor marina
-</LOCATION>
-<LOCATION>
-snodgrass slough
-</LOCATION>
-<LOCATION>
-clarksburg
-</LOCATION>
-<LOCATION>
-sacramento
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-11" name="Sacramento River"><LOCATION class="stationname region-11 sub_region-2">Collinsville</LOCATION><LOCATION class="stationname region-11 sub_region-2">Threemile Slough</LOCATION><LOCATION class="stationname region-11 sub_region-2">RIO VISTA</LOCATION><LOCATION class="stationname region-11 sub_region-2">Steamboat Slough, Snug Harbor Marina</LOCATION><LOCATION class="stationname region-11 sub_region-2">Snodgrass Slough</LOCATION><LOCATION class="stationname region-11 sub_region-2">Clarksburg</LOCATION><LOCATION class="stationname region-11 sub_region-2">Sacramento</LOCATION></REGION>

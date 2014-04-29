@@ -1,12 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-san carlos
-</LOCATION>
-<LOCATION>
-isla guadalupe
-</LOCATION>
-<LOCATION>
-ensenada, todos santos bay
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-1" name="Baja California"><LOCATION class="stationname region-1">San Carlos</LOCATION><LOCATION class="stationname region-1">Isla Guadalupe</LOCATION><LOCATION class="stationname region-1">Ensenada, Todos Santos Bay</LOCATION></REGION>

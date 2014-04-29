@@ -1,18 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-dorothy cove, necker bay
-</LOCATION>
-<LOCATION>
-golf island, necker island
-</LOCATION>
-<LOCATION>
-symonds bay, biorka island
-</LOCATION>
-<LOCATION>
-sitka
-</LOCATION>
-<LOCATION>
-olga point, olga strait
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-15" name="Baranof Island, west coast"><LOCATION class="stationname region-15 sub_region-9">Dorothy Cove</LOCATION><LOCATION class="stationname region-15 sub_region-9">GOLF ISLAND</LOCATION><LOCATION class="stationname region-15 sub_region-10">Symonds Bay, Biorka Island</LOCATION><LOCATION class="stationname region-15 sub_region-10">SITKA</LOCATION><LOCATION class="stationname region-15 sub_region-10">Olga Point, Olga Strait</LOCATION></REGION>

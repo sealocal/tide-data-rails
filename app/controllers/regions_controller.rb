@@ -9,7 +9,7 @@ class RegionsController < ApplicationController
     xml_file_path = xml_dir + "#{@region_name}.xml"
     xml_content = File.read(xml_file_path)
     #this is ridiculous, but it works for now
-    @locations_array = Hash.from_xml(xml_content)["TIDELOCATIONS"]["LOCATION"]
+    @locations_array = Hash.from_xml(xml_content)["REGION"]["LOCATION"]
     @locations_array.map {|location| location.strip!}
 
     #check number of LOCATION elements, and assign number of columns

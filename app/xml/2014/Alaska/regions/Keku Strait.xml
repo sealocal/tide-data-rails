@@ -1,12 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-monte carlo island
-</LOCATION>
-<LOCATION>
-the summit
-</LOCATION>
-<LOCATION>
-entrance island
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-10" name="Keku Strait"><LOCATION class="stationname region-10 sub_region-8">MONTE CARLO ISLAND</LOCATION><LOCATION class="stationname region-10 sub_region-8">THE SUMMIT</LOCATION><LOCATION class="stationname region-10 sub_region-8">ENTRANCE ISLAND</LOCATION><LOCATION class="stationname region-10 sub_region-8">KAKE HARBOR, KEKU STRAIT</LOCATION></REGION>

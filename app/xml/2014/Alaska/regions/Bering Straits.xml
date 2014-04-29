@@ -1,18 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-tin city
-</LOCATION>
-<LOCATION>
-kiwalik, kotzebue sound
-</LOCATION>
-<LOCATION>
-point barrow
-</LOCATION>
-<LOCATION>
-prudhoe bay
-</LOCATION>
-<LOCATION>
-flaxman island
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-31" name="Bering Straits"><LOCATION class="stationname region-31 sub_region-42">TIN CITY, BERING SEA</LOCATION><LOCATION class="stationname region-31 sub_region-42">SHISHMAREF INLET 2</LOCATION></REGION>

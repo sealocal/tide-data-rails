@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION name="Oregon">
+<LOCATION class="stationname region-0">Brookings, Chetco Cove</LOCATION>
+<LOCATION class="stationname region-0">Wedderburn, Rogue River</LOCATION>
+<LOCATION class="stationname region-0">Port Orford</LOCATION>
+<LOCATION class="stationname region-0">Bandon, Coquille River</LOCATION>
+</REGION>
