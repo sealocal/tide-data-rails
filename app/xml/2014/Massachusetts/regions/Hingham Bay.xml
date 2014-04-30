@@ -1,21 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-nut island, quincy bay
-</LOCATION>
-<LOCATION>
-weymouth fore river bridge
-</LOCATION>
-<LOCATION>
-crow point, hingham harbor entrance
-</LOCATION>
-<LOCATION>
-hingham
-</LOCATION>
-<LOCATION>
-nantasket beach, weir river
-</LOCATION>
-<LOCATION>
-hull
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-3" name="Hingham Bay"><LOCATION class="stationname region-3 sub_region-1">NUT ISLAND</LOCATION><LOCATION class="stationname region-3 sub_region-1">WEYMOUTH FORE RIVER</LOCATION><LOCATION class="stationname region-3 sub_region-1">Crow Point, Hingham Harbor entrance</LOCATION><LOCATION class="stationname region-3 sub_region-1">Hingham</LOCATION><LOCATION class="stationname region-3 sub_region-1">Nantasket Beach, Weir River</LOCATION><LOCATION class="stationname region-3 sub_region-1">Hull</LOCATION></REGION>

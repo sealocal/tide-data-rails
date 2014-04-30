@@ -1,27 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-tybee light
-</LOCATION>
-<LOCATION>
-savannah river ent.
-</LOCATION>
-<LOCATION>
-fort jackson
-</LOCATION>
-<LOCATION>
-savannah
-</LOCATION>
-<LOCATION>
-port wentworth
-</LOCATION>
-<LOCATION>
-little back river, hwy. 17, back river, s.c.
-</LOCATION>
-<LOCATION>
-s.c.l. rr. bridge
-</LOCATION>
-<LOCATION>
-purrysburg landing, s.c.
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-1" name="Savannah River"><LOCATION class="stationname region-1">Tybee Light</LOCATION><LOCATION class="stationname region-1">FORT PULASKI</LOCATION><LOCATION class="stationname region-1">Fort Jackson</LOCATION><LOCATION class="stationname region-1">SAVANNAH</LOCATION><LOCATION class="stationname region-1">PORT WENTWORTH</LOCATION><LOCATION class="stationname region-1">Little Back River, Hwy. 17, Back River, S.C.</LOCATION><LOCATION class="stationname region-1">S.C.L. RR. bridge</LOCATION><LOCATION class="stationname region-1">Purrysburg Landing, S.C.</LOCATION></REGION>

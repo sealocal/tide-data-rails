@@ -1,15 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-great point
-</LOCATION>
-<LOCATION>
-nantucket
-</LOCATION>
-<LOCATION>
-eel point
-</LOCATION>
-<LOCATION>
-muskeget island, north side
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-6" name="Nantucket Island"><LOCATION class="stationname region-6 sub_region-3">Great Point</LOCATION><LOCATION class="stationname region-6 sub_region-3">NANTUCKET ISLAND</LOCATION><LOCATION class="stationname region-6 sub_region-3">Eel Point</LOCATION><LOCATION class="stationname region-6 sub_region-3">Muskeget Island, north side</LOCATION></REGION>

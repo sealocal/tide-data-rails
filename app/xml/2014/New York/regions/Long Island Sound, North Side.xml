@@ -1,12 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-rye beach
-</LOCATION>
-<LOCATION>
-new rochelle
-</LOCATION>
-<LOCATION>
-throgs neck
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-1" name="Long Island Sound, north side"><LOCATION class="stationname region-1">RYE BEACH</LOCATION><LOCATION class="stationname region-1">New Rochelle</LOCATION><LOCATION class="stationname region-1">Throggs Neck</LOCATION></REGION>

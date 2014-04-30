@@ -1,18 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-breakwater harbor
-</LOCATION>
-<LOCATION>
-mispillion river entrance
-</LOCATION>
-<LOCATION>
-murderkill river entrance
-</LOCATION>
-<LOCATION>
-mahon river entrance
-</LOCATION>
-<LOCATION>
-leipsic, leipsic river
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-1" name="Delaware Bay, Western Shore"><LOCATION class="stationname region-1">LEWES</LOCATION><LOCATION class="stationname region-1">Mispillion River entrance</LOCATION><LOCATION class="stationname region-1">Murderkill River entrance</LOCATION><LOCATION class="stationname region-1">MAHON RIVER ENTRANCE</LOCATION><LOCATION class="stationname region-1">Leipsic, Leipsic River</LOCATION></REGION>

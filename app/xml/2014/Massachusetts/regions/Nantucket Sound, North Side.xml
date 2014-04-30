@@ -1,27 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-saquatucket harbor
-</LOCATION>
-<LOCATION>
-wychmere harbor
-</LOCATION>
-<LOCATION>
-dennisport
-</LOCATION>
-<LOCATION>
-south yarmouth, bass river
-</LOCATION>
-<LOCATION>
-hyannis port
-</LOCATION>
-<LOCATION>
-cotuit highlands
-</LOCATION>
-<LOCATION>
-poponesset island, poponesset bay
-</LOCATION>
-<LOCATION>
-falmouth heights
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-5" name="Nantucket Sound, north side"><LOCATION class="stationname region-5 sub_region-3">SAQUATUCKET HARBOR</LOCATION><LOCATION class="stationname region-5 sub_region-3">Wychmere Harbor</LOCATION><LOCATION class="stationname region-5 sub_region-3">Dennisport</LOCATION><LOCATION class="stationname region-5 sub_region-3">South Yarmouth, Bass River</LOCATION><LOCATION class="stationname region-5 sub_region-3">HYANNIS PORT</LOCATION><LOCATION class="stationname region-5 sub_region-3">Cotuit Highlands</LOCATION><LOCATION class="stationname region-5 sub_region-3">Poponesset Island, Poponesset Bay</LOCATION><LOCATION class="stationname region-5 sub_region-3">Falmouth Heights</LOCATION></REGION>

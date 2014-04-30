@@ -1,27 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-atlantic highlands
-</LOCATION>
-<LOCATION>
-sandy hook
-</LOCATION>
-<LOCATION>
-highlands, route 36 bridge
-</LOCATION>
-<LOCATION>
-oceanic bridge, navesink river
-</LOCATION>
-<LOCATION>
-red bank, navesink river
-</LOCATION>
-<LOCATION>
-sea bright
-</LOCATION>
-<LOCATION>
-gooseneck point, bridge
-</LOCATION>
-<LOCATION>
-long branch reach
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-1" name="Sandy Hook Bay"><LOCATION class="stationname region-1">Atlantic Highlands</LOCATION><LOCATION class="stationname region-1">SANDY HOOK</LOCATION><LOCATION class="stationname region-1 sub_region-1">Highlands, Route 36 bridge</LOCATION><LOCATION class="stationname region-1 sub_region-1">Oceanic Bridge, Navesink River</LOCATION><LOCATION class="stationname region-1 sub_region-1">Red Bank, Navesink River</LOCATION><LOCATION class="stationname region-1 sub_region-1">Sea Bright</LOCATION><LOCATION class="stationname region-1 sub_region-1">Gooseneck Point, bridge</LOCATION><LOCATION class="stationname region-1 sub_region-1">Long Branch Reach</LOCATION></REGION>
