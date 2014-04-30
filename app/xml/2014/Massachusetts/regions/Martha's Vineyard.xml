@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-wasque point, chappaquiddick island
-</LOCATION>
-<LOCATION>
-squibnocket point
-</LOCATION>
-<LOCATION>
-nomans land
-</LOCATION>
-<LOCATION>
-gay head
-</LOCATION>
-<LOCATION>
-cedar tree neck
-</LOCATION>
-<LOCATION>
-oak bluffs
-</LOCATION>
-<LOCATION>
-edgartown
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-7" name="Martha's Vineyard"><LOCATION class="stationname region-7 sub_region-3">Wasque Point, Chappaquiddick Island</LOCATION><LOCATION class="stationname region-7 sub_region-3">Squibnocket Point</LOCATION><LOCATION class="stationname region-7 sub_region-3">Nomans Land</LOCATION><LOCATION class="stationname region-7 sub_region-3">Gay Head</LOCATION><LOCATION class="stationname region-7 sub_region-3">Cedar Tree Neck</LOCATION><LOCATION class="stationname region-7 sub_region-3">VINEYARD HAVEN, VINEYARD HVN HBR</LOCATION><LOCATION class="stationname region-7 sub_region-3">Oak Bluffs</LOCATION><LOCATION class="stationname region-7 sub_region-3">EDGARTOWN</LOCATION></REGION>

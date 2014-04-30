@@ -1,18 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-little harbor
-</LOCATION>
-<LOCATION>
-woods hole
-</LOCATION>
-<LOCATION>
-uncatena island (south side)
-</LOCATION>
-<LOCATION>
-quicks hole, north side
-</LOCATION>
-<LOCATION>
-cuttyhunk
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-8" name="Vineyard Sound"><LOCATION class="stationname region-8 sub_region-4">Little Harbor</LOCATION><LOCATION class="stationname region-8 sub_region-4">WOODS HOLE</LOCATION><LOCATION class="stationname region-8 sub_region-4">Uncatena Island (south side)</LOCATION><LOCATION class="stationname region-8 sub_region-4">Quick's Hole</LOCATION><LOCATION class="stationname region-8 sub_region-4">Cuttyhunk</LOCATION></REGION>

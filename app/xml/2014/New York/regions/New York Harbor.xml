@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-coney island
-</LOCATION>
-<LOCATION>
-norton point, gravesend bay
-</LOCATION>
-<LOCATION>
-fort wadsworth, the narrows
-</LOCATION>
-<LOCATION>
-fort hamilton, the narrows
-</LOCATION>
-<LOCATION>
-st. george, staten island
-</LOCATION>
-<LOCATION>
-gowanus bay
-</LOCATION>
-<LOCATION>
-new york
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-4" name="New York Harbor"><LOCATION class="stationname region-4 sub_region-7">Coney Island</LOCATION><LOCATION class="stationname region-4 sub_region-7">Norton Point, Gravesend Bay</LOCATION><LOCATION class="stationname region-4 sub_region-7">Fort Wadsworth, The Narrows</LOCATION><LOCATION class="stationname region-4 sub_region-7">Fort Hamilton, The Narrows</LOCATION><LOCATION class="stationname region-4 sub_region-7">St. George, Staten Island</LOCATION><LOCATION class="stationname region-4 sub_region-7">Gowanus Bay</LOCATION><LOCATION class="stationname region-4 sub_region-7">THE BATTERY</LOCATION></REGION>

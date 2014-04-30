@@ -1,24 +1,2 @@
-﻿<?xml version="1.0" ?>
-<TIDELOCATIONS>
-<LOCATION>
-tybee creek entrance
-</LOCATION>
-<LOCATION>
-beach hammock
-</LOCATION>
-<LOCATION>
-romerly marsh creek
-</LOCATION>
-<LOCATION>
-savannah sheraton resort hotel
-</LOCATION>
-<LOCATION>
-thunderbolt
-</LOCATION>
-<LOCATION>
-north entrance
-</LOCATION>
-<LOCATION>
-isle of hope, skidaway river
-</LOCATION>
-</TIDELOCATIONS>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<REGION class="grphdr1" id="region-2" name="Tybee Creek and Wassaw Sound"><LOCATION class="stationname region-2">Tybee Creek entrance</LOCATION><LOCATION class="stationname region-2">Beach Hammock</LOCATION><LOCATION class="stationname region-2">Romerly Marsh Creek</LOCATION><LOCATION class="stationname region-2 sub_region-1">Savannah Sheraton Resort Hotel</LOCATION><LOCATION class="stationname region-2 sub_region-1">Thunderbolt</LOCATION><LOCATION class="stationname region-2 sub_region-1">North entrance</LOCATION><LOCATION class="stationname region-2 sub_region-1">Isle of Hope, Skidaway River</LOCATION></REGION>
