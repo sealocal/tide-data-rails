@@ -10,7 +10,10 @@ class RegionsController < ApplicationController
     xml_content = File.read(xml_file_path)
     #this is ridiculous, but it works for now
     @locations_array = Hash.from_xml(xml_content)["REGION"]["LOCATION"]
-    @locations_array.map {|location| location.strip!}
+    @locations_array.map do |location|
+      location.strip!
+      location.downcase!
+    end
 
     #check number of LOCATION elements, and assign number of columns
     if (@locations_array.size <= 24)
