@@ -11,9 +11,9 @@ class StatesController < ApplicationController
     @regions = @html_doc.css('.grphdr1, .grphdr2').map{ |node| strip_whitespace node.text }
     @stations = @html_doc.css('.stationname').map{ |node| strip_whitespace node.text }
 
-    # Point the station name links to location page
+    # Point the station name links to station page
     @html_doc.css('.stationname a').each do |anchor|
-      anchor.set_attribute('href', locations_path(@state_name, anchor.text))
+      anchor.set_attribute('href', stations_path(@state_name, URI.parse(anchor['href']).query.split('=').last, { station_name: anchor.text }))
     end
 
     # Remove table colums

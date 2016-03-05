@@ -11,6 +11,7 @@ gem 'sitemap_generator'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'nokogiri'
+gem 'httparty'
 
 group :development, :test do
   gem 'better_errors', '~> 1.1.0'

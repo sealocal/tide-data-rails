@@ -1,0 +1,112 @@
+<% content_for(:title) do %>
+  High and Low Tides of the day for <%= @station_name.titleize %>
+<% end %>
+
+<% content_for(:keywords) do %>
+  <% keywords = "#{@state_name}, " + "#{@state_name} State, " + @station_name %>
+  <% keywords += ", tide, tide chart, tide charts, tide height, tide prediction, tide predictions, tides, tide table, surf, sail, dive" %>
+  <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
+<% end %>
+
+<% content_for(:description) do %>
+  <% description = "High and Low Tides for #{@station_name}, in the state of #{@state_name}. TideData.com &copy; 2014" %>
+  <%= tag("meta", {name: "description", content: description }, false, false) %>
+<% end %>
+
+<br />
+<br />
+<br />
+
+<% if @tide_data['error'] %>
+
+  <%= @tide_data['error']['message'] %>
+
+<% else %>
+
+  <h1 id="stations_show">
+    <span id="SelectedStation">
+      <%= @station_name %>
+    </span>
+  </h1>
+  <br />
+
+  <form id="date">
+    <select id="day" onchange="getTide()">
+
+      <% 1.upto(31) do |i| %>
+        <%= render inline: content_tag( :option, i, id: i, value: i.to_s.rjust(2, '0') ) %>
+      <% end %>
+
+    </select>
+    &nbsp;
+    &nbsp;
+    <select id="month" onchange="getTide()">
+      <option id="Jan" value="01">January</option>
+      <option id="Feb" value="02">February</option>
+      <option id="Mar" value="03">March</option>
+      <option id="Apr" value="04">April</option>
+      <option id="May" value="05">May</option>
+      <option id="Jun" value="06">June</option>
+      <option id="Jul" value="07">July</option>
+      <option id="Aug" value="08">August</option>
+      <option id="Sep" value="09">September</option>
+      <option id="Oct" value="10">October</option>
+      <option id="Nov" value="11">November</option>
+      <option id="Dec" value="12">December</option>
+    </select>
+    &nbsp;
+    &nbsp;
+    <select id="year" onchange="getTide()">
+      <option id="2014" value="2014">2014</option>
+    </select>
+  </form>
+  <br />
+  <br />
+  <table id="tides" class="center">
+    <tr>
+      <th colspan="2">Tides for
+        <span id="tabledate"></span>
+        <br />
+      </th>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="left"><span id="tide1"></span></td>
+      <td class="right"><span id="time1"></span></td>
+    </tr>
+    <tr>
+      <td class="left"><span id="tide2"></span></td>
+      <td class="right"><span id="time2"></span></td>
+    </tr>
+    <tr>
+      <td class="left"><span id="tide3"></span></td>
+      <td class="right"><span id="time3"></span></td>
+    </tr>
+    <tr>
+      <td class="left"><span id="tide4"></span></td>
+      <td class="right"><span id="time4"></span></td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <br />
+  <p id="note">
+    <%= "NOTE: " + "All times are listed in Local Standard Time(LST) or, Local Daylight Time (LDT) (when applicable). All heights are in feet referenced to Mean Lower Low Water (MLLW)." + "All data is obtained from NOAA." %>
+  </p>
+  <br />
+  <%= content_tag :div, data: { tides: @tide_data } do %>
+  <%= debug @tide_data %>
+  <% end %>
+  <script type="text/javascript">
+    setToday();
+    getTide();
+    nameOfStation = $('#stations_show #SelectedStation').text();
+    nameOfStations = [nameOfStation]; //an array of Strings
+    $('#stations_show #SelectedStation').text(
+      customizeDisplayText(nameOfStations)
+    );
+  </script>
+
+<% end %>
