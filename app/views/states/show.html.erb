@@ -3,20 +3,20 @@
 <% end %>
 
 <% content_for(:keywords) do %>
-  <% keywords = @state_name + ', ' + @state_name + ' State, ' + @regions_array.join(', ') %>
+  <% keywords = @state_name + ', ' + @state_name + ' State, ' + @regions.join(', ') + @stations.join(', ') %>
   <% keywords += ", tide, tide chart, tide charts, tide height, tide prediction, tide predictions, tides, tide table, surf, sail, dive" %>
   <%= tag("meta", {name: "keywords", content: "#{keywords}"}, false, false) %>
 <% end %>
 
 <% content_for(:description) do %>
   <% description = "High and Low Tides for the state of #{@state_name}. TideData.com &copy; 2014" %>
-  <%= tag("meta", {name: "description", content: "#{description}"}, false, false) %>
+  <%= tag("meta", {name: "description", content: description }, false, false) %>
 <% end %>
 
-<%= render 'regions/index' %>
+<h1 class="state">
+  <%= @state_name %>
+</h1>
 
-<script type="text/javascript">
-  locationName = $('#locations_show #SelectedLocation');
-  locationNames = [locationName];
-  customizeDisplayText(locationNames);
-</script>
+<div>
+  <%= render inline: @html_doc.inner_html %>
+</div>

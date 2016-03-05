@@ -4,14 +4,33 @@ class StatesController < ApplicationController
 
   def show
     @state_name = params[:state_name]
-    @regions_array = Array.new
-    xml_dir = Rails.root.join 'app/xml/2014', @state_name, 'regions'
-    xml_dir.each_entry do |file_path|
-      @regions_array << file_path.to_s
+    html_path = Rails.root.join('app/assets/states', snakify(@state_name) + '.html')
+    @html_doc = File.open(html_path) { |f| Nokogiri::HTML(f) }
+
+    # Store the regions and stations for keywords tag
+    @regions = @html_doc.css('.grphdr1, .grphdr2').map{ |node| strip_whitespace node.text }
+    @stations = @html_doc.css('.stationname').map{ |node| strip_whitespace node.text }
+
+    # Point the station name links to location page
+    @html_doc.css('.stationname a').each do |anchor|
+      anchor.set_attribute('href', locations_path(@state_name, anchor.text))
     end
-    @regions_array.sort!
-    @regions_array.shift
-    @regions_array.shift
-    @regions_array.map! { |file_name| file_name.sub(".xml", "") }
-  end
+
+    # Remove table colums
+    @html_doc.css(extraneous_info_classes).remove
+  end # show
+
+  private
+
+    def snakify(string)
+      string.tr(' ', '').underscore
+    end
+
+    def strip_whitespace(string)
+      string.gsub(/\A\p{Space}*|\p{Space}*\z/, '')
+    end
+
+    def extraneous_info_classes
+      ".stn_id_hdr, .lat_hdr, .lon_hdr, .pred_type_hdr, .stationid, .latitude, .longitude, .pred_type"
+    end
 end

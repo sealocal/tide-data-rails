@@ -1,0 +1,53 @@
+{
+  "West Coast": [
+    "California",
+    "Washington",
+    "Alaska",
+    "Oregon"
+  ],
+  "East Coast": [
+    "Maine",
+    "New Hampshire",
+    "Massachusetts",
+    "Rhode Island",
+    "Connectic",
+    "New York",
+    "New Jerse",
+    "Delaware",
+    "Pennsylva",
+    "Maryland",
+    "Virginia",
+    "Washington DC",
+    "North Carolina",
+    "South Ca",
+    "Georgia",
+    "Florida"
+  ],
+  "Gulf Coast": [
+    "Alabama",
+    "Mississippi",
+    "Louisiana",
+    "Texas"
+  ],
+  "Pacific": [
+    "Northern Marianas Islands",
+    "Federated States of Micronesia",
+    "Marshall Islands",
+    "Hawaii",
+    "French Polynesia",
+    "Cook Islands",
+    "Fiji",
+    "Tokelau",
+    "American Samoa",
+    "Kiribati"
+  ],
+  "Caribbean Islands": [
+    "Bermuda Islands",
+    "Bahamas",
+    "Cuba",
+    "Jamaica",
+    "Haiti and Dominican Republic",
+    "Puerto Rico",
+    "Lesser Antilles & Virgin Islands"
+  ]
+}

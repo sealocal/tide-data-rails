@@ -1,7 +1,3 @@
-// Place all the styles related to the Locations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 p.capitalize {
   text-transform: capitalize;
   line-height: 40%;
@@ -21,28 +17,20 @@ p.capitalize {
 
 .column {
   float: left;
-  // padding: 20px;
-  // width: 100%;
-  /*width: 25%*/
-  /*width: 33%*/
-  /*width: 50%*/
 }
 
-//Locations#show
+/* Locations#show */
 
 h1#locations_show, form {
   text-align: center;
-  //height: 20px;
 }
 
-//location name
 #SelectedLocation {
   text-transform: capitalize;
   line-height: 40%;
   font-size: 1.20em;
 }
 
-//date selection
 select {
   font-size: 1.5em
 }
@@ -80,6 +68,4 @@ td.right {
   margin-right: auto;
   width: 30%;
   font-size: 70%;
-  //font-weight:bolder;
-  //color:red;
 }

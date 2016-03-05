@@ -1,7 +1,4 @@
 class LocationsController < ApplicationController
-  def index
-  end
-
   def show
     @state_name = params[:state_name]
     @location_name = params[:location_name]

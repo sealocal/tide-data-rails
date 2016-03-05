@@ -1,6 +1,9 @@
-// Place all the styles related to the States controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1.state {
+  position: relative;
+  letter-spacing: 10px;
+  word-spacing: 14px;
+  top: -20px;
+}
 
 #header {
   position: relative;
@@ -22,16 +25,14 @@
   top: -45px;
 }
 
-td, th {
-  //border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-
 table.states_index {
   float: left;
   border-collapse: collapse;
   text-align: center;
+}
+
+th.stn_name_hdr {
+  display: none;
 }
 
 th.states_index {
@@ -49,10 +50,6 @@ td.states_index {
 td.east {
   padding-left: 16px;
   padding-right: 16px;
-}
-
-a {
-  text-decoration: none;
 }
 
 #westcoast {
